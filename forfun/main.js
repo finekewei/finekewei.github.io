@@ -72,11 +72,11 @@ window.onload=function() {
 	};
 */
 //背景切换
-	var forfun=Math.floor(Math.random()*40);
+	var forfun=Math.floor(Math.random()*25);
     oBeijing.style.backgroundImage="url('forfun/images/beijing/" + forfun + ".jpg')";
 
     oHuanyizhang.onclick=function(){
-    	var forfun=Math.floor(Math.random()*40);
+    	var forfun=Math.floor(Math.random()*25);
     	oBeijing.style.backgroundImage="url('forfun/images/beijing/" + forfun + ".jpg')";
     }
 

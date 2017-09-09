@@ -192,7 +192,7 @@ img{
 
 
 #shouyexinxi textarea{
-	height: 92px;
+	height: 90px;
 	width: 465px;
 	color: #0099CC;
 
@@ -373,3 +373,15 @@ img{
 	height: 32px;
 	font-size: 15px;
 }
+
+
+#shouyexinxi p a{
+
+	position:absolute;
+	right: 50px;
+	text-decoration:underline;
+	color: #FF9999;
+	font-weight:bold;
+
+}
+

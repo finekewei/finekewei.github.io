@@ -26,7 +26,7 @@ window.onload=function(){
 			};
 			this.className="select";
 			aNeirong[this.index].style.display="block";
-			if (this.index==2) {
+			if (this.index==1) {
 				oYanlan.style.display="inline-block";
 			}
 			else{
