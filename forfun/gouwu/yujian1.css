@@ -1,0 +1,153 @@
+/*清除格式*/
+body,div,p {
+    margin:0;
+    padding:0;
+ }
+
+a{
+	text-decoration: none;
+}
+ul,li{
+	list-style: none;
+}
+html,body{
+	height:100%;
+
+}
+body{
+	height:100%;
+	width: 100%;
+	background-color: #333;
+ 	font: normal 15px "microsoft yahei",Arial,sans-serif;
+	color: #fff;
+	position: relative;
+}
+
+#beijing{
+	height: 100%;
+	width: 100%;
+	background-color: #333;
+	position: absolute;
+	top: 0px;
+	left:0px;
+	z-index: 1px;
+	background-repeat:no-repeat;
+	overflow:hidden;
+	background-size:cover;
+	background-position:center center;
+}
+
+#aa_bottom{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: calc(20% - 50px) ;
+	width: 17%;
+	border:1px green solid;
+}
+
+#people {
+	position: absolute;
+	bottom: 10px;
+	left: 25px;
+}
+#people img{
+	position: relative;
+	z-index: 100;
+	width: 40px;
+	height: 40px;
+	border-radius: 2px;
+	border: 1px solid #fff;
+	vertical-align: bottom;
+	cursor:pointer;
+}
+#people p{
+	z-index: 18;
+	display: inline;
+    font-size: 18px;
+    color: #fff;
+    line-height: 1px;
+    padding-left: 9px;
+
+}
+#aa_bottom span{
+
+	font-size: 12px;
+	line-height: 1px;
+}
+#qiehuan a{
+	cursor:pointer;
+	position: absolute;
+	left: 80px;
+	bottom: 45px;
+	color: green;
+}
+#tupianxinxi{
+	cursor:pointer;
+	position: absolute;
+	left: 80px;
+	bottom: 10px;
+	color: #fff; 
+}
+#huanyizhang{
+	cursor:pointer;
+	position: absolute;
+	left: 140px;
+	bottom: 18px;
+	color: #fff; 
+}
+
+
+iframe{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+}
+#unknown{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: calc(83% - 45px);
+	height: calc(20% - 50px) ;
+	border:1px green solid;
+
+}
+#unknown div.shangpin{
+	height: calc(100% - 4px) ;
+	width: 300px;
+	float: left;
+	position: relative;
+	margin-right: 20px;
+}
+#unknown div.shangpin a.tupian img{
+	height: 80px ;
+	width:80px ;
+	position: absolute;
+	left: 5px;
+	top: 5px
+}
+#unknown div.shangpin a.biaoti{
+	position: absolute;
+	left: 100px;
+	top: 10px;
+	color: green;
+}
+
+#unknown div.shangpin a.miaoshu{
+	position: absolute;
+	left: 100px;
+	top: 45px;
+	color: #fff;
+}
+
+#xiayizhang{
+	cursor:pointer;
+	color: #fff;
+	font-size: 120px;
+	position: absolute;
+	top: 36%;
+	right: 40px;
+}
