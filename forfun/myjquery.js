@@ -1,0 +1,11 @@
+$(document).ready(function(){
+	$("#people_sz").dblclick(function(event){
+		event.stopPropagation();
+	});
+	$("#people_sz").click(function(){
+		$("#logo_sz").toggle();
+	});
+	$("#tupianxinxi").click(function(){
+		$("#logo_sz").toggle();
+	});
+});
