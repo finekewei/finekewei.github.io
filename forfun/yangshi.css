@@ -133,20 +133,29 @@ input{
 
 }
 
-#people {
+#logo {
 	position: fixed;
 	bottom: 10px;
 	left: 25px;
 	z-index: 100;
-}
-
-#people img{
 	width: 40px;
 	height: 40px;
 	border-radius: 2px;
 	border: 1px solid #fff;
 	cursor:pointer;
 }
+
+#guanbi {
+	display: none;
+	position: fixed;
+	bottom: 575px;
+	left: 25px;
+	z-index: 100;
+	width: 36px;
+	height: 36px;
+	cursor:pointer;
+}
+
 
 div.zhenshi{
 	background-color: rgba(255,255,51,0.1);
@@ -280,6 +289,7 @@ iframe{
 }
 
 .news{
+
 	flex: 1;
 	height: 90%;
 	margin-left:9px;

@@ -55,12 +55,23 @@ window.onload=function() {
 	var oSearch=document.getElementById('search_btn');
 	var oInput=document.getElementById('search_input');
  	var oHuanyizhang=document.getElementById('huanyizhang');
- 	var oQiehuan=document.getElementById('qiehuan');
+
 
 	var forfun=Math.floor(Math.random()*25);
 
 
- 	//
+	$("#logo").click(function(){
+		$("#logo_sz").toggle();
+		$("#guanbi").toggle();
+	});
+	$("#tupianxinxi").click(function(){
+		$("#logo_sz").toggle();
+		$("#guanbi").toggle();
+	});
+	$("#guanbi").click(function(){
+		$("#logo_sz").toggle();
+		$("#guanbi").toggle();
+	});
  	
 
 	//单击单个框显示相应真实的板块
@@ -121,6 +132,7 @@ window.onload=function() {
 
 		if (aXuni[0].style.display!=="none"||aXuni[1].style.display==!"none"||aXuni[2].style.display==!"none"||aXuni[3].style.display!=="none"||aXuni[4].style.display!=="none") {
 			for (var i = 0; i < aXuni.length; i++) {
+				
 				aXuni[i].style.display="none";
 				
 				if (i==4) {
