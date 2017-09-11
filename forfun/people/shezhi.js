@@ -10,6 +10,30 @@ function getByClass(oParent,sClass){
 	return aResult;
 };
 
+function yl_delete(){
+	var oUl=document.getElementById('yl_liebiao');
+	var oA=document.getElementsByTagName('a');
+
+	for (var i = 0; i < oA.length; i++) {
+		oA[i].onclick=function(){
+			oUl.removeChild(this.parentNode);
+		}
+	}
+}
+
+function aaa(){
+	var oUl=document.getElementById('yl_liebiao');
+	var oBtn1=document.getElementById('add_btn1');
+	var oBtn3=document.getElementById('add_btn3');
+
+	oBtn3.onclick=function (){
+		var oLi=document.createElement('li');
+		oLi.innerHTML="<span>"+oBtn1.value+"</span><a href='javascript:yl_delete();'>删除</a>"
+		//父级 增加 （子节点）
+		oUl.appendChild(oLi);
+	}
+}
+
 window.onload=function(){
 	var oBiaoti=document.getElementById('biaoti');
 
@@ -34,29 +58,11 @@ window.onload=function(){
 			}
 		}
 	}
+	yl_delete();
+
+	aaa();
 
 
 }
-function yl_delete(){
-	var oUl=document.getElementById('yl_liebiao');
-	var oA=document.getElementsByTagName('a');
 
-	for (var i = 0; i < oA.length; i++) {
-		oA[i].onclick=function(){
-			oUl.removeChild(this.parentNode);
-		}
-	}
-}
 
-function aaa(){
-	var oUl=document.getElementById('yl_liebiao');
-	var oBtn1=document.getElementById('add_btn1');
-	var oBtn3=document.getElementById('add_btn3');
-
-	oBtn3.click=function (){
-		var oLi=document.createElement('li');
-		oLi.innerHTML="<span>"+oBtn1.value+"</span><a href='javascript:yl_delete();'>删除</a>"
-		//父级 增加 （子节点）
-		oUl.appendChild(oLi);
-	}
-}
