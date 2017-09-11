@@ -56,25 +56,8 @@ window.onload=function() {
 	var oInput=document.getElementById('search_input');
  	var oHuanyizhang=document.getElementById('huanyizhang');
  	var oQiehuan=document.getElementById('qiehuan');
-/*
-    if (oBody.clientWidth <= 900) {
-    	
-    	
-    	oCss.href="Find%20another%20dog_files/yujian2.css";
-    }
-    else{
- 		alert("bbb");
-    	oCss.href="Find%20another%20dog_files/yujian.css";
-	};
-*/
-//背景切换
-	var forfun=Math.floor(Math.random()*25);
-    oBeijing.style.backgroundImage="url('forfun/images/beijing/" + forfun + ".jpg')";
 
-    oHuanyizhang.onclick=function(){
-    	var forfun=Math.floor(Math.random()*25);
-    	oBeijing.style.backgroundImage="url('forfun/images/beijing/" + forfun + ".jpg')";
-    }
+	var forfun=Math.floor(Math.random()*25);
 
 
  	//
@@ -87,19 +70,32 @@ window.onload=function() {
 
 		aXuni[i].onclick=function(){
 			this.style.display="none";
-			aZhenshi[this.shiliu].style.display="block";
+			
 
 			if (this.shiliu==0) {
+				aZhenshi[this.shiliu].style="display:block";
 				oInput.value="";
 				oInput.focus();
 				oSearch.style="display:inline-block";
-
 			}
-			if (this.shiliu==4) {
-				aZhenshi[this.shiliu].style="display: -webkit-box;";
-			};
+			else if (this.shiliu==4) {
+				aZhenshi[this.shiliu].style="display:flex";
+			}
+			else{
+				aZhenshi[this.shiliu].style="display:block";
+			}
 		}
 	};
+
+    oBeijing.style.backgroundImage="url('forfun/images/beijing/" + forfun + ".jpg')";
+
+    oHuanyizhang.onclick=function(){
+    	var forfun=Math.floor(Math.random()*25);
+    	oBeijing.style.backgroundImage="url('forfun/images/beijing/" + forfun + ".jpg')";
+    }
+
+
+
 
 	oInput.onblur=function(){
 		setTimeout(function(){
@@ -123,40 +119,35 @@ window.onload=function() {
 
 	oBeijing.ondblclick=function(){
 
-		if (aXuni[0].style.display=="block"&&aXuni[1].style.display=="block"&&aXuni[2].style.display=="block"&&aXuni[3].style.display=="block"&&aXuni[4].style.display=="block") {
+		if (aXuni[0].style.display!=="none"||aXuni[1].style.display==!"none"||aXuni[2].style.display==!"none"||aXuni[3].style.display!=="none"||aXuni[4].style.display!=="none") {
 			for (var i = 0; i < aXuni.length; i++) {
 				aXuni[i].style.display="none";
-				aZhenshi[i].style.display="block";
+				
 				if (i==4) {
-					aZhenshi[i].style="display: -webkit-box;";
-				};
+					aZhenshi[i].style="display:flex";
+				}
+				else{
+					aZhenshi[i].style="display: block";
+				}
 
 			}
 		}
-		else if (aXuni[0].style.display=="none"&&aXuni[1].style.display=="none"&&aXuni[2].style.display=="none"&&aXuni[3].style.display=="none"&&aXuni[4].style.display=="none") {
-			for (var i = 0; i < aXuni.length; i++) {
 
+		else{
+			for (var i = 0; i < aXuni.length; i++) {
+       
 				aXuni[i].style.display="block";
 				aZhenshi[i].style.display="none";
 			}
 		}
-		else{
-			for (var i = 0; i < aXuni.length; i++) {
-       
-				aXuni[i].style.display="none";
-
-				aZhenshi[i].style.display="block";
-				if (i==4) {
-					aZhenshi[i].style="display: -webkit-box;";
-				};
-			}
-		}
 	}
-	fangsuo(oBody,oHtml);
+
+	
 
 	oBody.onresize=function(){
 		fangsuo(oBody,oHtml);
 	}
+	fangsuo(oBody,oHtml);
 
 
 	setTimeout(function(){
