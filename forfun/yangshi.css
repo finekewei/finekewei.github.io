@@ -133,16 +133,13 @@ input{
 
 }
 
-.aaa #people {
+#people {
 	position: fixed;
 	bottom: 10px;
 	left: 25px;
 	z-index: 100;
 }
-.bbb #people,{
-	display: none;
 
-}
 #people img{
 	width: 40px;
 	height: 40px;
