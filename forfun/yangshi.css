@@ -280,7 +280,7 @@ iframe{
 }
 
 .news{
-	width: calc(33% - 30px);;
+	flex: 1;
 	height: 90%;
 	margin-left:9px;
 	margin-top: 7px;
