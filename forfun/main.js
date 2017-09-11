@@ -79,7 +79,7 @@ window.onload=function() {
 				oSearch.style="display:inline-block";
 			}
 			else if (this.shiliu==4) {
-				aZhenshi[this.shiliu].style="display:flex";
+				aZhenshi[this.shiliu].style="display: -moz-box;display: -ms-flexbox;display: -webkit-box;display: -webkit-flex;display: box; display: flexbox;  display: flex;";
 			}
 			else{
 				aZhenshi[this.shiliu].style="display:block";
@@ -124,7 +124,7 @@ window.onload=function() {
 				aXuni[i].style.display="none";
 				
 				if (i==4) {
-					aZhenshi[i].style="display:flex";
+					aZhenshi[i].style="display: -moz-box;display: -ms-flexbox;display: -webkit-box;display: -webkit-flex;display: box; display: flexbox;  display: flex;";
 				}
 				else{
 					aZhenshi[i].style="display: block";
