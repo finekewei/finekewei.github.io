@@ -28,8 +28,8 @@ img{
 	background-color: rgba(0,0,0,0.6);
 }
 #waikuang{
-	position: relative;
-	top: 100px;
+	position: absolute;
+	bottom: 134px;
 	left: 30px;
 	width:618px;
 	height: 438px;
@@ -358,9 +358,9 @@ img{
 /*导航预览设置*/
 
 #daohang_yl{
-	position: relative;
-	top: 100px;
-	left: 30px;
+	position: absolute;
+	bottom: 134px;
+	left: 694px;
 	height: 438px;
 	width: 150px;
 	background-color: #EEF4ED;
