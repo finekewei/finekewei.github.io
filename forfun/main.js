@@ -26,7 +26,7 @@ function getByClass(oParent,sClass){
 			
 
 //获取非行间样式
-function getStyle(obj,attr){    //获取非行间样式，obj是对象，attr是值
+function getStyle(obj,attr){    //获取非行间样式，obj是对象，attr值
     if(obj.currentStyle){   //针对ie获取非行间样式
         return obj.currentStyle[attr];
     }else{
