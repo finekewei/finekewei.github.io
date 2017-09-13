@@ -1,18 +1,7 @@
-function getByClass(oParent,sClass){
-	var aResult=[];
-	var aEle=oParent.getElementsByTagName('*');
-
-	for (var i = 0; i < aEle.length; i++) {
-		if(aEle[i].className==sClass){
-			aResult.push(aEle[i]);
-		}
-	}
-	return aResult;
-};
 
 function yl_delete(){
 	var oUl=document.getElementById('yl_liebiao');
-	var oA=document.getElementsByTagName('a');
+	var oA=oUl.getElementsByTagName('a');
 
 	for (var i = 0; i < oA.length; i++) {
 		oA[i].onclick=function(){
@@ -21,24 +10,13 @@ function yl_delete(){
 	}
 }
 
-function aaa(){
-	var oUl=document.getElementById('yl_liebiao');
-	var oBtn1=document.getElementById('add_btn1');
-	var oBtn3=document.getElementById('add_btn3');
 
-	oBtn3.onclick=function (){
-		var oLi=document.createElement('li');
-		oLi.innerHTML="<span>"+oBtn1.value+"</span><a href='javascript:yl_delete();'>删除</a>"
-		//父级 增加 （子节点）
-		oUl.appendChild(oLi);
-	}
-}
 
 window.onload=function(){
 	var oBiaoti=document.getElementById('biaoti');
 
 	var aBiaoti=oBiaoti.getElementsByTagName('li');
-	var aNeirong=getByClass(neirong,'mod');
+	var aNeirong=document.getElementsByClassName("mod");
 	var oYanlan=document.getElementById('daohang_yl');
 
 	for (var i = 0; i < aBiaoti.length; i++) {
@@ -58,10 +36,17 @@ window.onload=function(){
 			}
 		}
 	}
-	yl_delete();
 
-	aaa();
+	var oUl=document.getElementById('yl_liebiao');
+	var oBtn1=document.getElementById('add_btn1');
+	var oBtn3=document.getElementById('add_btn3');
 
+	oBtn3.onclick=function (){
+		var oLi=document.createElement('li');
+		oLi.innerHTML="<span>"+oBtn1.value+"</span><a href='javascript:yl_delete();'>删除</a>"
+		//父级 增加 （子节点）
+		oUl.appendChild(oLi);
+	}
 
 }
 
