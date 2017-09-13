@@ -41,7 +41,6 @@ window.onload=function() {
 	});
  	
 
-	//单击单个框显示相应真实的板块
 	for (var i = 0; i < aXuni.length; i++) {
 
 		aXuni[i].shiliu=i;
