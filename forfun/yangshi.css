@@ -330,4 +330,6 @@ iframe{
  p span{
  	color: #FF9999;
  }
-
+ p span a{
+ 	color: #FF9999;
+ }
