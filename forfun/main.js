@@ -1,38 +1,4 @@
 
-function stopEventBubble(event){
-    var e=event || window.event;
-
-    if (e && e.stopPropagation){
-        e.stopPropagation();    
-    }
-    else{
-        e.cancelBubble=true;
-    }
-}
-
-
-//指定元素下获取class元素
-function getByClass(oParent,sClass){
-	var aResult=[];
-	var aEle=oParent.getElementsByTagName('*');
-
-	for (var i = 0; i < aEle.length; i++) {
-		if(aEle[i].className==sClass){
-			aResult.push(aEle[i]);
-		}
-	}
-	return aResult;
-};
-			
-
-//获取非行间样式
-function getStyle(obj,attr){    //获取非行间样式，obj是对象，attr值
-    if(obj.currentStyle){   //针对ie获取非行间样式
-        return obj.currentStyle[attr];
-    }else{
-        return getComputedStyle(obj,false)[attr];   //针对非ie
-    };
-};
 
 function fangsuo (a,b) {
 	// body...
@@ -49,8 +15,9 @@ window.onload=function() {
 	var oHtml=document.getElementById('html');
 	var oBody=document.getElementById('body');
 	var oBeijing=document.getElementById('beijing');
-	var aZhenshi=getByClass(oBody,'zhenshi');
-	var aXuni=getByClass(oBody,'xuni');
+	var aZhenshi=document.getElementsByClassName("zhenshi");
+
+	var aXuni=document.getElementsByClassName("xuni");
 
 	var oSearch=document.getElementById('search_btn');
 	var oInput=document.getElementById('search_input');
