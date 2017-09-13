@@ -56,9 +56,6 @@ window.onload=function() {
 				oInput.focus();
 				oSearch.style="display:inline-block";
 			}
-			else if (this.shiliu==4) {
-				aZhenshi[this.shiliu].style="display: -moz-box;display: -ms-flexbox;display: -webkit-box;display: -webkit-flex;display: box; display: flexbox;  display: flex;";
-			}
 			else{
 				aZhenshi[this.shiliu].style="display:block";
 			}
@@ -101,14 +98,7 @@ window.onload=function() {
 			for (var i = 0; i < aXuni.length; i++) {
 				
 				aXuni[i].style.display="none";
-				
-				if (i==4) {
-					aZhenshi[i].style="display: -moz-box;display: -ms-flexbox;display: -webkit-box;display: -webkit-flex;display: box; display: flexbox;  display: flex;";
-				}
-				else{
-					aZhenshi[i].style="display: block";
-				}
-
+				aZhenshi[i].style="display: block";
 			}
 		}
 
