@@ -287,6 +287,15 @@ iframe{
 	 padding: 10px
 
 }
+#new_waike{
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: box; 
+	display: flexbox;  
+	display: flex;
+}
 
 .news{
 
