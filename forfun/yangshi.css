@@ -329,8 +329,10 @@ iframe{
 }
  p span{
  	color: #FF9999;
+	font-weight:bold;
  }
  p span a{
- 	color: #007722;
+ 	color: #FF9999;
  	cursor:pointer;
+	font-weight:bold;
  }
