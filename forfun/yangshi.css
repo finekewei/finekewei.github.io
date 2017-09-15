@@ -297,6 +297,7 @@ iframe{
 	display: flex;
 }
 
+
 .news{
 
 	flex: 1;
@@ -321,18 +322,63 @@ iframe{
 	float: right;
 	color: #ccc;
 }
-#tishi{
+.aaa #tishi,.bbb #tishi{
 	position: fixed;
 	top: 15px;
 	left: 36%;
 	z-index: 100;
 }
- p span{
+ #tishi span{
  	color: #FF9999;
-	font-weight:bold;
  }
  p span a{
- 	color: #FF9999;
+ 	color: #007722;
  	cursor:pointer;
-	font-weight:bold;
  }
+
+
+
+.mmm html{
+	font-size: 10px;
+}
+.mmm #beijing{
+	height: 100%;
+	width: 100%;
+	position: relative;
+	z-index: 1;
+	background-color: #333;
+	background-repeat:no-repeat;
+	overflow:hidden;
+	background-size:cover;
+	background-position:center center;
+	background-attachment:fixed;
+}
+.mmm .xuni{
+	display: none;
+}
+.mmm .zhenshi{
+	display: none;
+}
+.mmm #tishi{
+	position: absolute;
+	bottom: 18rem;
+	width: 100%;
+	text-align:center;
+	z-index: 100;
+
+}
+.mmm #tishi p{
+	font-size: 8rem;
+	line-height: 2rem;
+	margin-bottom: 4.5rem
+
+}
+
+.mmm #tishi p span{
+	font-size: 2.5rem;
+	color: #fff;
+
+}
+
+
+
