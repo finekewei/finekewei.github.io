@@ -179,7 +179,7 @@ div.zhenshi{
 }
 
 
-#aa_bottom h1{
+#aa_bottom h2{
 
 	position: absolute;
 	line-height: 1px;
@@ -278,9 +278,9 @@ iframe{
 	height: 100%;
 	z-index: 10;
 }
-#tuijian h3{
+#tuijian h1{
 	text-align: center;
-
+	font-size: 22px;
 
 }
 #tuijian p{
