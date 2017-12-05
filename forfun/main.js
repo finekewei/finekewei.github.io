@@ -40,7 +40,7 @@ window.onload=function() {
  	var oHuanyizhang=document.getElementById('huanyizhang');
  	var web_or_mobile;
 
-	var forfun=Math.floor(Math.random()*26);
+	var forfun=Math.floor(Math.random()*27);
 
 	fangsuo(oBody,oHtml);
 	oBeijing.style.backgroundImage="url('forfun/images/beijing/" + forfun + ".jpg')";
@@ -85,7 +85,7 @@ window.onload=function() {
     
 
 	    oHuanyizhang.onclick=function(){
-	    	var forfun=Math.floor(Math.random()*25);
+	    	var forfun=Math.floor(Math.random()*27);
 	    	oBeijing.style.backgroundImage="url('forfun/images/beijing/" + forfun + ".jpg')";
 	    }
 
