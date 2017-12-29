@@ -40,7 +40,7 @@ window.onload=function() {
  	var oHuanyizhang=document.getElementById('huanyizhang');
  	var web_or_mobile;
 
-	var forfun=Math.floor(Math.random()*27);
+	var forfun=Math.floor(Math.random()*28);
 
 	fangsuo(oBody,oHtml);
 	oBeijing.style.backgroundImage="url('forfun/images/beijing/" + forfun + ".jpg')";
