@@ -144,10 +144,10 @@ window.onload=function() {
 	}
 	else{
 		oHtml.setAttribute("class", "mmm"); 
-		document.getElementById('tishi').innerHTML='<p><span>我在意生活的仪式感，每天暗示自己：fine today。</span></p><p><span>移动端正在开发中，pc更精彩！</span></p><p>www.fine.today</p>'
+		document.getElementById('tishi').innerHTML='<p><span>哈，服务器有问题要关啦，各位祝好，回见～（俗气一下，想找我可以去豆瓣）</span></p><p><span>移动端正在开发中，pc更精彩！</span></p><p>www.fine.today</p>'
 		setTimeout(function(){
 			document.getElementById('tishi').style.cssText="display:none;";
-		},30000);
+		},300000);
 
 	}
 
