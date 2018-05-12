@@ -137,7 +137,7 @@ window.onload=function() {
 		oBody.onresize=function(){
 			fangsuo(oBody,oHtml);
 		}
-		document.getElementById('tishi').innerHTML='<p>随便点点看？ （ <span>喜欢</span> 就设为浏览器首页吧）</p>';
+		document.getElementById('tishi').innerHTML='<p>哈，服务器有问题要关啦，各位祝好，回见～（俗气一下，想找我可以去豆瓣）</p>';
 		setTimeout(function(){
 			document.getElementById('tishi').style.cssText="display:none;";
 		},5000);
