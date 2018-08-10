@@ -137,14 +137,14 @@ window.onload=function() {
 		oBody.onresize=function(){
 			fangsuo(oBody,oHtml);
 		}
-		document.getElementById('tishi').innerHTML='<p>fine today</p>';
+		document.getElementById('tishi').innerHTML='<p>点点看，有惊喜？<span>喜欢</span>就设为首页吧#</p>';
 		setTimeout(function(){
 			document.getElementById('tishi').style.cssText="display:none;";
 		},5000);
 	}
 	else{
 		oHtml.setAttribute("class", "mmm"); 
-		document.getElementById('tishi').innerHTML='<p><span>Fine today</span></p><p><span>移动端正在开发中，pc更精彩！</span></p><p>www.fine.today</p>'
+		document.getElementById('tishi').innerHTML='<p><span>today will fine</span></p><p><span>移动端正在开发中，pc更精彩！</span></p><p>www.fine.today</p>'
 		setTimeout(function(){
 			document.getElementById('tishi').style.cssText="display:none;";
 		},300000);
