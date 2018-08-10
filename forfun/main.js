@@ -137,7 +137,7 @@ window.onload=function() {
 		oBody.onresize=function(){
 			fangsuo(oBody,oHtml);
 		}
-		document.getElementById('tishi').innerHTML='<p>点点看，有惊喜？<span>喜欢</span>就设为首页吧#</p>';
+		document.getElementById('tishi').innerHTML='<p>点点看，有惊喜？ <span>喜欢</span> 就设为首页吧</p>';
 		setTimeout(function(){
 			document.getElementById('tishi').style.cssText="display:none;";
 		},5000);
