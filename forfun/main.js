@@ -137,14 +137,14 @@ window.onload=function() {
 		oBody.onresize=function(){
 			fangsuo(oBody,oHtml);
 		}
-		document.getElementById('tishi').innerHTML='<p>哈，服务器有问题要关啦，各位祝好，回见～（俗气一下，想找我可以去豆瓣）</p>';
+		document.getElementById('tishi').innerHTML='<p>fine today</p>';
 		setTimeout(function(){
 			document.getElementById('tishi').style.cssText="display:none;";
 		},5000);
 	}
 	else{
 		oHtml.setAttribute("class", "mmm"); 
-		document.getElementById('tishi').innerHTML='<p><span>哈，服务器有问题要关啦，各位祝好，回见～（俗气一下，想找我可以去豆瓣）</span></p><p><span>移动端正在开发中，pc更精彩！</span></p><p>www.fine.today</p>'
+		document.getElementById('tishi').innerHTML='<p><span>Fine today</span></p><p><span>移动端正在开发中，pc更精彩！</span></p><p>www.fine.today</p>'
 		setTimeout(function(){
 			document.getElementById('tishi').style.cssText="display:none;";
 		},300000);
