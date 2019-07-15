@@ -142,8 +142,6 @@
                          </ul>
                     </div>
 
-
-
                </div>
           </div>
 
@@ -378,7 +376,7 @@
                     </div>
                     <div class="tupian" >
                          <div class="left">
-                              <img src="images/img0.jpg" class="left">
+                              <img src="images/img0.png" class="left">
                          </div>
                          <div class="right">
                                <img src="images/img1.png" class="m1">
@@ -476,12 +474,17 @@
                     <div class="title_t">
                          <h2>如何参赛</h2>
                     </div>
-                    <ul class="circle">
-                          <p>关注新营销官方微信公众号：newmarketingcn，及时了解科特勒·新营销大奖最新动态。</p>
-                         <li>后台回复1，奖项报名；</li>
-                         <li>后台回复2，奖项咨询。</li>
-                    </ul>
-               
+
+                    <div id="wechat2">
+                         <img src="images/image001.png" >
+                         <div>
+                              <p>关注新营销官方微信公众号：newmarketingcn，及时了解科特勒·新营销大奖最新动态。</p>
+                              <ul class="circle">
+                                   <li>后台回复1：奖项报名</li>
+                                   <li>后台回复2：奖项咨询</li>
+                              </ul>
+                         </div>
+                    </div>
 
                     <div>
                          <h4>第一步：填写作品信息表和参赛报名表</h4>
@@ -1345,18 +1348,6 @@
 
 </body>
 <script>
-     //指定元素下获取class元素
-     function getByClass(oParent,sClass){
-          var aResult=[];
-          var aEle=oParent.getElementsByTagName('*');
-
-          for (var i = 0; i < aEle.length; i++) {
-               if(aEle[i].className==sClass){
-                    aResult.push(aEle[i]);
-               }
-          }
-          return aResult;
-     };
           
      //放缩
      function fangsuo (a,b) {
@@ -1389,10 +1380,12 @@
                     };
                     this.className="select";
                     aNeirong[this.index].style.display="block";
-                    if(oBody.clientWidth<1024){
+
+                    if( $(window).width() <1024){
                          $("#container2").fadeOut(); 
 
                     }
+                    
                     
                }
           }
@@ -1403,7 +1396,7 @@
              $(document.body).css({  
                  "overflow-y": "hidden"  
              });  
-             $("#fuchuang").css("margin-top",$("body").scrollTop());
+             // $("#fuchuang").css("margin-top",$("body").scrollTop());
              $("#fuchuang").fadeIn("slow"); 
          });
 
@@ -1425,37 +1418,64 @@
                $("#lianxi_kuang").fadeToggle("slow")
          });
 
-          fangsuo(oBody,oHtml);
-          if(oBody.clientWidth<1024){
-               $("#container2").css({  
-                 "display": "none"  
-             });  
+          // oBody.onresize=function(){
+          //      if(window.screen.width  <1024){
+          //           oHtml.setAttribute("class", "bbb"); 
+          //      }
+          //      else{
+          //           oHtml.setAttribute("class", "aaa"); 
+          //      }
 
+          // }
+          if($(window).width()  <1024){
+               oHtml.setAttribute("class", "bbb"); 
           }
+          else{
+               oHtml.setAttribute("class", "aaa"); 
+          }
+          $(window).resize(function(){
 
-          oBody.onresize=function(){
-               fangsuo(oBody,oHtml);
-               if(oBody.clientWidth<1024){
-                    $("#container2").css({  
-                         "display": "none"  
-                    })
-                     $("#lianxi_kuang").css({  
-                         "display": "block"  
-                    })
-
+               if($(window).width()  <1024){
+                    oHtml.setAttribute("class", "bbb");
 
                }
                else{
-                    $("#container2").css({  
-                         "display": "block"  
-                    })
-                    $("#lianxi_kuang").css({  
-                         "display": "none"  
-                    })
-                   
+                    oHtml.setAttribute("class", "aaa"); 
                }
+              //code
+          });
 
-          }
+          // fangsuo(oBody,oHtml);
+          // if(oBody.clientWidth<1024){
+          //      $("#container2").css({  
+          //        "display": "none"  
+          //    });  
+
+          // }
+
+          // oBody.onresize=function(){
+          //      fangsuo(oBody,oHtml);
+          //      if(onresize<1024){
+          //           $("#container2").css({  
+          //                "display": "none"  
+          //           })
+          //            $("#lianxi_kuang").css({  
+          //                "display": "block"  
+          //           })
+
+
+          //      }
+          //      else{
+          //           $("#container2").css({  
+          //                "display": "block"  
+          //           })
+          //           $("#lianxi_kuang").css({  
+          //                "display": "none"  
+          //           })
+                   
+          //      }
+
+          // }
 
 
      }
